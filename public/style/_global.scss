@@ -1,0 +1,76 @@
+$white: #fff;
+$black: #000000;
+$darken: #3a4348;
+$primary: #f2d6c9;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.page-content {
+  margin-top: 85px;
+}
+
+footer {
+  border-top: 1px solid #cfcfcf;
+  margin-top: 100px;
+
+  p {
+    color: #979797;
+  }
+}
+
+.form-control {
+  background-color: #f3f3f3;
+}
+
+.btn {
+  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  // display: block;
+
+  // @include media-breakpoint-up(lg) {
+  //   // padding: 5px 25px 5px 25px;
+  //   // &.btn-nav {
+  //   //   margin-left: 50px;
+  //   // }
+  // }
+
+  cursor: pointer;
+  @include border-radius(15px);
+  -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &.btn-signup {
+    @include button-variant(#f2d6c9, transparent);
+    color: #bbbbbb;
+  }
+
+  // &.btn-black {
+  //   background: $black;
+  //   border: 1px solid $black;
+  //   color: $white;
+  //   &:hover {
+  //     background: $primary;
+  //     border: 1px solid lighten($primary, 0);
+  //     color: $darken;
+  //   }
+  //   &.btn-outline-white {
+  //     border: 1px solid $black;
+  //     background: transparent;
+  //     color: $black;
+  //     &:hover {
+  //       border: 1px solid transparent;
+  //       background: $black;
+  //       color: $white;
+  //     }
+  //   }
+  // }
+}
